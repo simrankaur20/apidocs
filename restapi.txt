@@ -1,0 +1,366 @@
+=======================================================================================================
+Request Type : POST
+
+URI : /createquestion
+
+----------sample example of question without parameters---------
+
+REQUEST JSON STRUCTURE
+
+
+{
+        "isFirstQuestionOfJourney" : false,
+        "questiontext": "You start driving to reach the destination",
+        "optionstype" : "MCQ",
+        "options" : [
+            {
+                "text" : "Reach on time",
+                "isValidOption" : true,
+                "score" : 10,
+                "nextquestionid" : "5f05c542e12f30532cc49f07"
+            },
+            {
+                "text" : "Reach late",
+                "isValidOption" : false,
+                "score" : -5,
+                "nextquestionid" : "5f05c542e12f30532cc49f07"
+
+            }
+        ]
+}
+
+
+
+RESPONSE JSON STRUCTURE
+
+{
+    "currquestion": {
+        "_id": "5f06d49247dbe74930980fb8",
+        "isFirstQuestionOfJourney": false,
+        "questiontext": "You start driving to reach the destination",
+        "optionstype": "MCQ",
+        "options": [
+            {
+                "_id": "5f06d49247dbe74930980fb9",
+                "text": "Reach on time",
+                "isValidOption": true,
+                "score": 10,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            },
+            {
+                "_id": "5f06d49247dbe74930980fba",
+                "text": "Reach late",
+                "isValidOption": false,
+                "score": -5,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            }
+        ],
+        "__v": 0
+    }
+}
+
+RESPONSE CODES
+
+201 - Created
+400 - Wrong data
+
+----------sample example of question with parameters---------
+
+
+REQUEST JSON STRUCTURE
+
+{
+        "isFirstQuestionOfJourney" : true,
+        "questiontext": "You got a new order",
+        "params" : [
+            {
+                "paramkey" : "pickup",
+                "value" : "gurugram" 
+            },
+            {
+                "paramkey" : "destination",
+                "value" : "noida"
+            },
+            {
+                "paramkey" : "pay",
+                "value" : "700"
+            }
+        ],
+        "optionstype" : "MCQ",
+        "options" : [
+            {
+                "text" : "Reach on time",
+                "isValidOption" : true,
+                "score" : 10,
+                "nextquestionid" : "5f06d49247dbe74930980fb8"
+            },
+            {
+                "text" : "Reach late",
+                "isValidOption" : false,
+                "score" : -5,
+                "nextquestionid" : "5f05c542e12f30532cc49f07"
+
+            }
+
+        ]
+}
+
+
+RESPONSE JSON STRUCTURE
+
+{
+    "currquestion": {
+        "_id": "5f06d70747dbe74930980fc1",
+        "isFirstQuestionOfJourney": true,
+        "questiontext": "You got a new order",
+        "optionstype": "MCQ",
+        "params": [
+            {
+                "_id": "5f06d70747dbe74930980fc2",
+                "paramkey": "pickup",
+                "value": "gurugram"
+            },
+            {
+                "_id": "5f06d70747dbe74930980fc3",
+                "paramkey": "destination",
+                "value": "noida"
+            },
+            {
+                "_id": "5f06d70747dbe74930980fc4",
+                "paramkey": "pay",
+                "value": "700"
+            }
+        ],
+        "options": [
+            {
+                "_id": "5f06d70747dbe74930980fc5",
+                "text": "Reach on time",
+                "isValidOption": true,
+                "score": 10,
+                "nextquestionid": "5f06d49247dbe74930980fb8"
+            },
+            {
+                "_id": "5f06d70747dbe74930980fc6",
+                "text": "Reach late",
+                "isValidOption": false,
+                "score": -5,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            }
+        ],
+        "__v": 0
+    }
+}
+
+
+RESPONSE CODES
+
+201 - Created
+400 - Wrong data
+
+Validations : 
+1. length of options array should atleast be 1
+2. Required attributes : _id, questiontext, isFirstQuestionOfJourney, optionstype
+3. If the user enters params, then paramkey and value are required attributes, else the params attribute will be undefined
+4. For options,
+  4.1 Required attributes : _id , isValidOption , score , nextquestionid
+  4.2 Rest of the required attributes would depend on option type, as mentioned below
+  4.3 optionstype can only be 'MCQ' , 'boolean', 'image-only'
+
+---------------------------------------------------------------------
+
+the optionstype that can be chsoen are : 
+
+1. MCQ - example stated above
+
+Validations : 
+    a)Apart from the validations mentioned in point 4.1 , text is also a required attribute
+
+2. boolean
+   Apart from the validations mentioned in point 4.1,
+   a) Options array length should be exactly 2
+   b) text should be true and false only 
+   c) text is a required attribute
+   d) isValidOption of one option should be true, and for the other it should be false
+
+Validations
+
+3. image-only
+   Apart from the validations mentioned in point 4.1,
+   a) url in options is a required attribute
+   b) the url should be valid url (not any string)
+
+----------------------------------------
+    options type : boolean
+-----------------------------------------
+
+JSON request structure
+
+{
+        "isFirstQuestionOfJourney" : false,
+        "questiontext": "Delhi is the capital of India",
+        "optionstype" : "boolean",
+        "options" : [
+            {
+                "text" : "true",
+                "isValidOption" : true,
+                "score" : 10,
+                "nextquestionid" : "5f06d49247dbe74930980fb8"
+            },
+            {
+                "text" : "false",
+                "isValidOption" : false,
+                "score" : -5,
+                "nextquestionid" : "5f05c542e12f30532cc49f07"
+
+            }
+        ]
+}
+
+
+JSON RESPONSE STRUCTURE
+
+{
+    "currquestion": {
+        "_id": "5f06ddd847dbe74930980fc7",
+        "isFirstQuestionOfJourney": false,
+        "questiontext": "Delhi is the capital of India",
+        "optionstype": "boolean",
+        "options": [
+            {
+                "_id": "5f06ddd847dbe74930980fc8",
+                "text": "true",
+                "isValidOption": true,
+                "score": 10,
+                "nextquestionid": "5f06d49247dbe74930980fb8"
+            },
+            {
+                "_id": "5f06ddd847dbe74930980fc9",
+                "text": "false",
+                "isValidOption": false,
+                "score": -5,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            }
+        ],
+        "__v": 0
+    }
+}
+
+---------------------------------------------------
+              image-only
+-----------------------------------------------------
+
+JSON REQUEST STRUCTURE
+
+{
+        "isFirstQuestionOfJourney" : false,
+        "questiontext": "Which is the most useful device?",
+        "optionstype" : "image-only",
+        "options" : [
+            {
+                "url" : "https://img.icons8.com/fluent/48/000000/monitor.png",
+                "isValidOption" : true,
+                "score" : 10,
+                "nextquestionid" : "5f06d49247dbe74930980fb8"
+            },
+            {
+                "url" : "https://img.icons8.com/fluent/48/000000/desktop.png",
+                "isValidOption" : true,
+                "score" : 20,
+                "nextquestionid" : "5f06d49247dbe74930980fb8"
+            },
+            {
+                "url" : "https://img.icons8.com/fluent/48/000000/computer.png",
+                "isValidOption" : false,
+                "score" : -5,
+                "nextquestionid" : "5f05c542e12f30532cc49f07"
+
+            }
+        ]
+}
+
+
+
+JSON RESPONSE STRUCTURE
+
+{
+    "currquestion": {
+        "_id": "5f06e22447dbe74930980fda",
+        "isFirstQuestionOfJourney": false,
+        "questiontext": "Which is the most useful device?",
+        "optionstype": "image-only",
+        "options": [
+            {
+                "_id": "5f06e22447dbe74930980fdb",
+                "url": "https://img.icons8.com/fluent/48/000000/monitor.png",
+                "isValidOption": true,
+                "score": 10,
+                "nextquestionid": "5f06d49247dbe74930980fb8"
+            },
+            {
+                "_id": "5f06e22447dbe74930980fdc",
+                "url": "https://img.icons8.com/fluent/48/000000/desktop.png",
+                "isValidOption": true,
+                "score": 20,
+                "nextquestionid": "5f06d49247dbe74930980fb8"
+            },
+            {
+                "_id": "5f06e22447dbe74930980fdd",
+                "url": "https://img.icons8.com/fluent/48/000000/computer.png",
+                "isValidOption": false,
+                "score": -5,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            }
+        ],
+        "__v": 0
+    }
+}
+
+
+================================================================================================================
+
+Request Type : GET
+
+URI : /question/:questionid&:optionid
+sample url : http://localhost:9000/question?questionid=5f06d70747dbe74930980fc1&optionid=5f06d70747dbe74930980fc5
+
+
+QUERY PARAMS : 
+
+questionid : 5f06d70747dbe74930980fc1
+optionid : 5f06d70747dbe74930980fc5
+
+
+This sends the question having nextquestionid in this option
+
+
+ {
+        "_id": "5f06d49247dbe74930980fb8",
+        "isFirstQuestionOfJourney": false,
+        "questiontext": "You start driving to reach the destination",
+        "optionstype": "MCQ",
+        "options": [
+            {
+                "_id": "5f06d49247dbe74930980fb9",
+                "text": "Reach on time",
+                "isValidOption": true,
+                "score": 10,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            },
+            {
+                "_id": "5f06d49247dbe74930980fba",
+                "text": "Reach late",
+                "isValidOption": false,
+                "score": -5,
+                "nextquestionid": "5f05c542e12f30532cc49f07"
+            }
+        ],
+        "__v": 0
+}
+
+
+RESPONSE CODES
+
+200 - OK
+500 - Server error
+400 - Bad Request
+
