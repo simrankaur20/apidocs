@@ -1,5 +1,5 @@
 =======================================================================================================
-Request Type : POST
+HTTP METHOD : POST
 
 URI : /createquestion
 
@@ -176,13 +176,15 @@ Validations :
     a)Apart from the validations mentioned in point 4.1 , text is also a required attribute
 
 2. boolean
+   
+   Validations
    Apart from the validations mentioned in point 4.1,
    a) Options array length should be exactly 2
    b) text should be true and false only 
    c) text is a required attribute
    d) isValidOption of one option should be true, and for the other it should be false
 
-Validations
+
 
 3. image-only
    Apart from the validations mentioned in point 4.1,
@@ -318,7 +320,7 @@ JSON RESPONSE STRUCTURE
 
 ================================================================================================================
 
-Request Type : GET
+HTTP METHOD : GET
 
 URI : /question/:questionid&:optionid
 sample url : http://localhost:9000/question?questionid=5f06d70747dbe74930980fc1&optionid=5f06d70747dbe74930980fc5
