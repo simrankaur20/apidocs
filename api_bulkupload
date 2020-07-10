@@ -1,0 +1,741 @@
+=======================================================================================================
+Request Type : POST
+
+URI : /questions
+
+
+REQUEST JSON STRUCTURE
+
+{
+    "questions": [
+        {
+            "isFirstQuestion": true,
+            "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
+            "optionstype": "MCQ",
+            "options" : [
+                {
+                    "text" : "Accept",
+                    "isValidOption" : true,
+                    "score" : 10
+                },
+                {
+                    "text" : "Reject",
+                    "isValidOption" : false,
+                    "score" : 0
+                }
+            ]   
+        },
+        {
+            "isFirstQuestion": false,
+            "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "text" : "Accept",
+                    "isValidOption" : true,
+                    "score" : 5
+                    
+                },
+                {
+                    "text" : "Reject",
+                    "isValidOption" : false,
+                    "score" : 0
+                    
+                }
+            ]
+        },
+        {
+            "isFirstQuestion": false,
+            "questiontext": "Time to start the trip",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "text" : "Start trip",
+                    "isValidOption" : true,
+                    "score" : 10
+                    
+                },
+                {
+                    "text" : "Dont start",
+                    "isValidOption" : false,
+                    "score" : 0
+                }
+            ]
+        },
+        {
+            "isFirstQuestion": false,
+            "questiontext": "Start driving",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "text" : "Reach on time",
+                    "isValidOption" : true,
+                    "score" : 10
+                    
+                },
+                {
+                    "text" : "Reach late",
+                    "isValidOption" : false,
+                    "score" : 0
+                }
+            ]
+        },
+        {
+            "isFirstQuestion": false,
+            "questiontext": "You reach the store. Associate loads the goods",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "text" : "Load goods",
+                    "isValidOption" : true,
+                    "score" : 10
+                    
+                }
+            ]
+        },
+         {
+            "isFirstQuestion": false,
+            "questiontext": "You drive to reach the customer's house",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "text" : "Ring the doorbell",
+                    "isValidOption" : true,
+                    "score" : 10
+                }
+            ]
+        },
+         {
+            "isFirstQuestion": false,
+            "questiontext": "The customer comes and pays the amount of order",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "text" : "Load goods",
+                    "isValidOption" : true,
+                    "score" : 10    
+                }
+            ]
+        }
+       
+    ]
+}
+
+
+
+RESPONSE JSON STRUCTURE
+
+{
+    "validquestions": [
+        {
+            "_id": "5f08ac5fc6d09839608940ed",
+            "isFirstQuestion": true,
+            "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940ee",
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940ef",
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f3",
+            "isFirstQuestion": false,
+            "questiontext": "Time to start the trip",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f4",
+                    "text": "Start trip",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f5",
+                    "text": "Dont start",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940fd",
+            "isFirstQuestion": false,
+            "questiontext": "The customer comes and pays the amount of order",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940fe",
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f9",
+            "isFirstQuestion": false,
+            "questiontext": "You reach the store. Associate loads the goods",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940fa",
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f0",
+            "isFirstQuestion": false,
+            "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f1",
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f2",
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f6",
+            "isFirstQuestion": false,
+            "questiontext": "Start driving",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f7",
+                    "text": "Reach on time",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f8",
+                    "text": "Reach late",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940fb",
+            "isFirstQuestion": false,
+            "questiontext": "You drive to reach the customer's house",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940fc",
+                    "text": "Ring the doorbell",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        }
+    ],
+    "errors": []
+}
+
+
+RESPONSE CODES
+
+201 - Created
+400 - Bad request
+
+
+Validations : 
+1. length of options array should atleast be 1
+2. Required attributes : _id, questiontext, isFirstQuestionOfJourney, optionstype
+3. If the user enters params, then paramkey and value are required attributes, else the params attribute will be undefined
+4. For options,
+  4.1 Required attributes : _id , isValidOption , score , nextquestionid
+  4.2 Rest of the required attributes would depend on option type, as mentioned below
+  4.3 optionstype can only be 'MCQ' , 'boolean', 'image-only'
+5. the questions which are valid will be inserted into the DB and those that are invalid would not be added in the DB and they would be sent in the response in the 'errors' array
+---------------------------------------------------------------------
+
+the optionstype that can be chsoen are : 
+
+1. MCQ - example stated above
+
+Validations : 
+    a)Apart from the validations mentioned in point 4.1 , text is also a required attribute
+
+2. boolean
+   Apart from the validations mentioned in point 4.1,
+   a) Options array length should be exactly 2
+   b) text should be true and false only 
+   c) text is a required attribute
+   d) isValidOption of one option should be true, and for the other it should be false
+
+Validations
+
+3. image-only
+   Apart from the validations mentioned in point 4.1,
+   a) url in options is a required attribute
+   b) the url should be valid url (not any string)
+
+
+
+
+==============================================================================================================================
+
+
+HTTP METHOD : POST
+
+URI : /questions/link
+
+REQUEST JSON STRUCTURE
+
+{
+    "links" : [
+        {
+            "optionid" : "5f08ac5fc6d09839608940ee",
+            "questionid" : "5f08ac5fc6d09839608940f3"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940ef",
+            "questionid" : "5f08ac5fc6d09839608940f0"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940f1",
+            "questionid" : "5f08ac5fc6d09839608940f3"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940f2",
+            "questionid" : null
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940f4",
+            "questionid" : "5f08ac5fc6d09839608940f6"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940f5",
+            "questionid" : null
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940f7",
+            "questionid" : "5f08ac5fc6d09839608940f9"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940f8",
+            "questionid" : "5f08ac5fc6d09839608940f9"
+
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940fa",
+            "questionid" : "5f08ac5fc6d09839608940fb"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940fc",
+            "questionid" : "5f08ac5fc6d09839608940fd"
+        },
+        {
+            "optionid" : "5f08ac5fc6d09839608940fe",
+            "questionid" : null
+        }
+
+    ]
+}
+
+
+
+RESPONSE JSON STRUCTURE
+{
+    "questions": [
+        {
+            "_id": "5f08ac5fc6d09839608940f3",
+            "isFirstQuestion": false,
+            "questiontext": "Time to start the trip",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f6",
+                    "_id": "5f08ac5fc6d09839608940f4",
+                    "text": "Start trip",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f5",
+                    "text": "Dont start",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940ed",
+            "isFirstQuestion": true,
+            "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f3",
+                    "_id": "5f08ac5fc6d09839608940ee",
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f0",
+                    "_id": "5f08ac5fc6d09839608940ef",
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f0",
+            "isFirstQuestion": false,
+            "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f3",
+                    "_id": "5f08ac5fc6d09839608940f1",
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f2",
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940ed",
+            "isFirstQuestion": true,
+            "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f3",
+                    "_id": "5f08ac5fc6d09839608940ee",
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f0",
+                    "_id": "5f08ac5fc6d09839608940ef",
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f3",
+            "isFirstQuestion": false,
+            "questiontext": "Time to start the trip",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f6",
+                    "_id": "5f08ac5fc6d09839608940f4",
+                    "text": "Start trip",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f5",
+                    "text": "Dont start",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f0",
+            "isFirstQuestion": false,
+            "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f3",
+                    "_id": "5f08ac5fc6d09839608940f1",
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f2",
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f6",
+            "isFirstQuestion": false,
+            "questiontext": "Start driving",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f9",
+                    "_id": "5f08ac5fc6d09839608940f7",
+                    "text": "Reach on time",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f9",
+                    "_id": "5f08ac5fc6d09839608940f8",
+                    "text": "Reach late",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f3",
+            "isFirstQuestion": false,
+            "questiontext": "Time to start the trip",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f6",
+                    "_id": "5f08ac5fc6d09839608940f4",
+                    "text": "Start trip",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": null,
+                    "_id": "5f08ac5fc6d09839608940f5",
+                    "text": "Dont start",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f9",
+            "isFirstQuestion": false,
+            "questiontext": "You reach the store. Associate loads the goods",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940fb",
+                    "_id": "5f08ac5fc6d09839608940fa",
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f6",
+            "isFirstQuestion": false,
+            "questiontext": "Start driving",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f9",
+                    "_id": "5f08ac5fc6d09839608940f7",
+                    "text": "Reach on time",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f9",
+                    "_id": "5f08ac5fc6d09839608940f8",
+                    "text": "Reach late",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f9",
+            "isFirstQuestion": false,
+            "questiontext": "You reach the store. Associate loads the goods",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940fb",
+                    "_id": "5f08ac5fc6d09839608940fa",
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f6",
+            "isFirstQuestion": false,
+            "questiontext": "Start driving",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f9",
+                    "_id": "5f08ac5fc6d09839608940f7",
+                    "text": "Reach on time",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940f9",
+                    "_id": "5f08ac5fc6d09839608940f8",
+                    "text": "Reach late",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940fb",
+            "isFirstQuestion": false,
+            "questiontext": "You drive to reach the customer's house",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940fd",
+                    "_id": "5f08ac5fc6d09839608940fc",
+                    "text": "Ring the doorbell",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "5f08ac5fc6d09839608940f9",
+            "isFirstQuestion": false,
+            "questiontext": "You reach the store. Associate loads the goods",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": "5f08ac5fc6d09839608940fb",
+                    "_id": "5f08ac5fc6d09839608940fa",
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ],
+            "__v": 0
+        }
+    ]
+}
+
+
+Validations : 
+1. Both the questionid and optionid should be correct. If the questionid id not present in DB, error will be sent in the response
+2. Valid links will be established. The response will include the questions that have valid links and the errors for which link could not be established due to inaccurate data sent in request
+
+RESPONSE CODES : 
+200 - OK
+400 - BAD REQUEST
+
+
+======================================================================================================================
+
+
+
+HTTP METHOD : GET
+
+URI : /getquestion?questionid="123344"
+
+QUERY PARAMS 
+
+questionid : 5f08ac5fc6d09839608940f3
+
+(We will send nextquestionid to this route)
+
+RESPONSE JSON STRUCTURE
+
+{
+    "question": {
+        "_id": "5f08ac5fc6d09839608940f3",
+        "isFirstQuestion": false,
+        "questiontext": "Time to start the trip",
+        "optionstype": "MCQ",
+        "options": [
+            {
+                "nextquestionid": "5f08ac5fc6d09839608940f6",
+                "_id": "5f08ac5fc6d09839608940f4",
+                "text": "Start trip",
+                "isValidOption": true,
+                "score": 10
+            },
+            {
+                "nextquestionid": null,
+                "_id": "5f08ac5fc6d09839608940f5",
+                "text": "Dont start",
+                "isValidOption": false,
+                "score": 0
+            }
+        ],
+        "__v": 0
+    }
+}
+
+
+RESPONSE CODES:
+
+200 - OK
+400 - Bad request
+500 - Server error
+
+
+
+
+
+
