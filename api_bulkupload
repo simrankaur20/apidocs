@@ -126,156 +126,156 @@ REQUEST JSON STRUCTURE
 RESPONSE JSON STRUCTURE
 
 {
-    "validquestions": [
+    "questions": [
         {
-            "_id": "5f08ac5fc6d09839608940ed",
             "isFirstQuestion": true,
             "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
             "optionstype": "MCQ",
             "options": [
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940ee",
                     "text": "Accept",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd650720-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940ef",
                     "text": "Reject",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd650721-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
+            "_id": "cd650722-c37d-11ea-9f16-d5a0c000ad0e",
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940f3",
-            "isFirstQuestion": false,
-            "questiontext": "Time to start the trip",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f4",
-                    "text": "Start trip",
-                    "isValidOption": true,
-                    "score": 10
-                },
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f5",
-                    "text": "Dont start",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940fd",
-            "isFirstQuestion": false,
-            "questiontext": "The customer comes and pays the amount of order",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940fe",
-                    "text": "Load goods",
-                    "isValidOption": true,
-                    "score": 10
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f9",
-            "isFirstQuestion": false,
-            "questiontext": "You reach the store. Associate loads the goods",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940fa",
-                    "text": "Load goods",
-                    "isValidOption": true,
-                    "score": 10
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f0",
             "isFirstQuestion": false,
             "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
             "optionstype": "MCQ",
             "options": [
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f1",
                     "text": "Accept",
                     "isValidOption": true,
-                    "score": 5
+                    "score": 5,
+                    "_id": "cd668dc0-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f2",
                     "text": "Reject",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd66b4d0-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
+            "_id": "cd66b4d1-c37d-11ea-9f16-d5a0c000ad0e",
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940f6",
+            "isFirstQuestion": false,
+            "questiontext": "Time to start the trip",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Start trip",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "cd683b70-c37d-11ea-9f16-d5a0c000ad0e"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Dont start",
+                    "isValidOption": false,
+                    "score": 0,
+                    "_id": "cd683b71-c37d-11ea-9f16-d5a0c000ad0e"
+                }
+            ],
+            "_id": "cd683b72-c37d-11ea-9f16-d5a0c000ad0e",
+            "__v": 0
+        },
+        {
             "isFirstQuestion": false,
             "questiontext": "Start driving",
             "optionstype": "MCQ",
             "options": [
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f7",
                     "text": "Reach on time",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd68b0a0-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f8",
                     "text": "Reach late",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd68b0a1-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
+            "_id": "cd68b0a2-c37d-11ea-9f16-d5a0c000ad0e",
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940fb",
+            "isFirstQuestion": false,
+            "questiontext": "You reach the store. Associate loads the goods",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "cd6a8560-c37d-11ea-9f16-d5a0c000ad0e"
+                }
+            ],
+            "_id": "cd6a8561-c37d-11ea-9f16-d5a0c000ad0e",
+            "__v": 0
+        },
+        {
             "isFirstQuestion": false,
             "questiontext": "You drive to reach the customer's house",
             "optionstype": "MCQ",
             "options": [
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940fc",
                     "text": "Ring the doorbell",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd6b21a0-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
+            "_id": "cd6b21a1-c37d-11ea-9f16-d5a0c000ad0e",
+            "__v": 0
+        },
+        {
+            "isFirstQuestion": false,
+            "questiontext": "The customer comes and pays the amount of order",
+            "optionstype": "MCQ",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Load goods",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "cd6b6fc0-c37d-11ea-9f16-d5a0c000ad0e"
+                }
+            ],
+            "_id": "cd6b6fc1-c37d-11ea-9f16-d5a0c000ad0e",
             "__v": 0
         }
     ],
     "errors": []
 }
 
-
 RESPONSE CODES
 
 201 - Created
 400 - Bad request
+
 
 
 Validations : 
@@ -322,358 +322,187 @@ URI : /questions/link
 
 REQUEST JSON STRUCTURE
 
+
 {
     "links" : [
         {
-            "optionid" : "5f08ac5fc6d09839608940ee",
-            "questionid" : "5f08ac5fc6d09839608940f3"
+            "Optionid" : "cd650720-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd683b72-c37d-11ea-9f16-d5a0c000ad0e"
+        },
+         {
+            "Optionid" : "cd650721-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd66b4d1-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940ef",
-            "questionid" : "5f08ac5fc6d09839608940f0"
+            "Optionid" : "cd668dc0-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd683b72-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940f1",
-            "questionid" : "5f08ac5fc6d09839608940f3"
+            "Optionid" : "cd66b4d0-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : null
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940f2",
-            "questionid" : null
+            "Optionid" : "cd683b70-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd68b0a2-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940f4",
-            "questionid" : "5f08ac5fc6d09839608940f6"
+            "Optionid" : "cd683b71-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : null
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940f5",
-            "questionid" : null
+            "Optionid" : "cd68b0a0-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd6a8561-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940f7",
-            "questionid" : "5f08ac5fc6d09839608940f9"
+            "Optionid" : "cd68b0a1-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd6a8561-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940f8",
-            "questionid" : "5f08ac5fc6d09839608940f9"
-
+            "Optionid" : "cd6a8560-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd6b21a1-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940fa",
-            "questionid" : "5f08ac5fc6d09839608940fb"
+            "Optionid" : "cd6b21a0-c37d-11ea-9f16-d5a0c000ad0e",
+            "NextQuestionId" : "cd6b6fc1-c37d-11ea-9f16-d5a0c000ad0e"
         },
         {
-            "optionid" : "5f08ac5fc6d09839608940fc",
-            "questionid" : "5f08ac5fc6d09839608940fd"
-        },
-        {
-            "optionid" : "5f08ac5fc6d09839608940fe",
-            "questionid" : null
+            "Optionid" : "cd6b6fc0-c37d-11ea-9f16-d5a0c000ad0e" ,
+            "NextQuestionId" : null
         }
-
     ]
 }
 
-
-
 RESPONSE JSON STRUCTURE
+
 {
     "questions": [
         {
-            "_id": "5f08ac5fc6d09839608940f3",
+            "_id": "cd683b72-c37d-11ea-9f16-d5a0c000ad0e",
             "isFirstQuestion": false,
             "questiontext": "Time to start the trip",
             "optionstype": "MCQ",
             "options": [
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940f6",
-                    "_id": "5f08ac5fc6d09839608940f4",
+                    "nextquestionid": "zWiwosN9EeqfFtWgwACtDg==",
                     "text": "Start trip",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd683b70-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f5",
                     "text": "Dont start",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd683b71-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940ed",
+            "_id": "cd650722-c37d-11ea-9f16-d5a0c000ad0e",
             "isFirstQuestion": true,
             "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
             "optionstype": "MCQ",
             "options": [
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940f3",
-                    "_id": "5f08ac5fc6d09839608940ee",
+                    "nextquestionid": "zWg7csN9EeqfFtWgwACtDg==",
                     "text": "Accept",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd650720-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940f0",
-                    "_id": "5f08ac5fc6d09839608940ef",
+                    "nextquestionid": "zWa00cN9EeqfFtWgwACtDg==",
                     "text": "Reject",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd650721-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940f0",
+            "_id": "cd66b4d1-c37d-11ea-9f16-d5a0c000ad0e",
             "isFirstQuestion": false,
             "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
             "optionstype": "MCQ",
             "options": [
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940f3",
-                    "_id": "5f08ac5fc6d09839608940f1",
+                    "nextquestionid": "zWg7csN9EeqfFtWgwACtDg==",
                     "text": "Accept",
                     "isValidOption": true,
-                    "score": 5
+                    "score": 5,
+                    "_id": "cd668dc0-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
                     "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f2",
                     "text": "Reject",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd66b4d0-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940ed",
-            "isFirstQuestion": true,
-            "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f3",
-                    "_id": "5f08ac5fc6d09839608940ee",
-                    "text": "Accept",
-                    "isValidOption": true,
-                    "score": 10
-                },
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f0",
-                    "_id": "5f08ac5fc6d09839608940ef",
-                    "text": "Reject",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f3",
-            "isFirstQuestion": false,
-            "questiontext": "Time to start the trip",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f6",
-                    "_id": "5f08ac5fc6d09839608940f4",
-                    "text": "Start trip",
-                    "isValidOption": true,
-                    "score": 10
-                },
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f5",
-                    "text": "Dont start",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f0",
-            "isFirstQuestion": false,
-            "questiontext": "Got a new journey , pickup : pitampura , destination : rohini , pay : 700",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f3",
-                    "_id": "5f08ac5fc6d09839608940f1",
-                    "text": "Accept",
-                    "isValidOption": true,
-                    "score": 5
-                },
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f2",
-                    "text": "Reject",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f6",
+            "_id": "cd68b0a2-c37d-11ea-9f16-d5a0c000ad0e",
             "isFirstQuestion": false,
             "questiontext": "Start driving",
             "optionstype": "MCQ",
             "options": [
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940f9",
-                    "_id": "5f08ac5fc6d09839608940f7",
+                    "nextquestionid": "zWqFYcN9EeqfFtWgwACtDg==",
                     "text": "Reach on time",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd68b0a0-c37d-11ea-9f16-d5a0c000ad0e"
                 },
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940f9",
-                    "_id": "5f08ac5fc6d09839608940f8",
+                    "nextquestionid": "zWqFYcN9EeqfFtWgwACtDg==",
                     "text": "Reach late",
                     "isValidOption": false,
-                    "score": 0
+                    "score": 0,
+                    "_id": "cd68b0a1-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940f3",
-            "isFirstQuestion": false,
-            "questiontext": "Time to start the trip",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f6",
-                    "_id": "5f08ac5fc6d09839608940f4",
-                    "text": "Start trip",
-                    "isValidOption": true,
-                    "score": 10
-                },
-                {
-                    "nextquestionid": null,
-                    "_id": "5f08ac5fc6d09839608940f5",
-                    "text": "Dont start",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f9",
+            "_id": "cd6a8561-c37d-11ea-9f16-d5a0c000ad0e",
             "isFirstQuestion": false,
             "questiontext": "You reach the store. Associate loads the goods",
             "optionstype": "MCQ",
             "options": [
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940fb",
-                    "_id": "5f08ac5fc6d09839608940fa",
+                    "nextquestionid": "zWshocN9EeqfFtWgwACtDg==",
                     "text": "Load goods",
                     "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd6a8560-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
             "__v": 0
         },
         {
-            "_id": "5f08ac5fc6d09839608940f6",
-            "isFirstQuestion": false,
-            "questiontext": "Start driving",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f9",
-                    "_id": "5f08ac5fc6d09839608940f7",
-                    "text": "Reach on time",
-                    "isValidOption": true,
-                    "score": 10
-                },
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f9",
-                    "_id": "5f08ac5fc6d09839608940f8",
-                    "text": "Reach late",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f9",
-            "isFirstQuestion": false,
-            "questiontext": "You reach the store. Associate loads the goods",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940fb",
-                    "_id": "5f08ac5fc6d09839608940fa",
-                    "text": "Load goods",
-                    "isValidOption": true,
-                    "score": 10
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f6",
-            "isFirstQuestion": false,
-            "questiontext": "Start driving",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f9",
-                    "_id": "5f08ac5fc6d09839608940f7",
-                    "text": "Reach on time",
-                    "isValidOption": true,
-                    "score": 10
-                },
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940f9",
-                    "_id": "5f08ac5fc6d09839608940f8",
-                    "text": "Reach late",
-                    "isValidOption": false,
-                    "score": 0
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940fb",
+            "_id": "cd6b21a1-c37d-11ea-9f16-d5a0c000ad0e",
             "isFirstQuestion": false,
             "questiontext": "You drive to reach the customer's house",
             "optionstype": "MCQ",
             "options": [
                 {
-                    "nextquestionid": "5f08ac5fc6d09839608940fd",
-                    "_id": "5f08ac5fc6d09839608940fc",
+                    "nextquestionid": "zWtvwcN9EeqfFtWgwACtDg==",
                     "text": "Ring the doorbell",
                     "isValidOption": true,
-                    "score": 10
-                }
-            ],
-            "__v": 0
-        },
-        {
-            "_id": "5f08ac5fc6d09839608940f9",
-            "isFirstQuestion": false,
-            "questiontext": "You reach the store. Associate loads the goods",
-            "optionstype": "MCQ",
-            "options": [
-                {
-                    "nextquestionid": "5f08ac5fc6d09839608940fb",
-                    "_id": "5f08ac5fc6d09839608940fa",
-                    "text": "Load goods",
-                    "isValidOption": true,
-                    "score": 10
+                    "score": 10,
+                    "_id": "cd6b21a0-c37d-11ea-9f16-d5a0c000ad0e"
                 }
             ],
             "__v": 0
         }
     ]
 }
+
 
 
 Validations : 
@@ -695,32 +524,31 @@ URI : /getquestion?questionid="123344"
 
 QUERY PARAMS 
 
-questionid : 5f08ac5fc6d09839608940f3
+questionid : cd650722-c37d-11ea-9f16-d5a0c000ad0e
 
-(We will send nextquestionid to this route)
 
 RESPONSE JSON STRUCTURE
 
 {
     "question": {
-        "_id": "5f08ac5fc6d09839608940f3",
-        "isFirstQuestion": false,
-        "questiontext": "Time to start the trip",
+        "_id": "cd650722-c37d-11ea-9f16-d5a0c000ad0e",
+        "isFirstQuestion": true,
+        "questiontext": "Got a new journey , pickup : dwarka , destination : noida , pay : 500  ",
         "optionstype": "MCQ",
         "options": [
             {
-                "nextquestionid": "5f08ac5fc6d09839608940f6",
-                "_id": "5f08ac5fc6d09839608940f4",
-                "text": "Start trip",
+                "nextquestionid": "zWg7csN9EeqfFtWgwACtDg==",
+                "text": "Accept",
                 "isValidOption": true,
-                "score": 10
+                "score": 10,
+                "_id": "cd650720-c37d-11ea-9f16-d5a0c000ad0e"
             },
             {
-                "nextquestionid": null,
-                "_id": "5f08ac5fc6d09839608940f5",
-                "text": "Dont start",
+                "nextquestionid": "zWa00cN9EeqfFtWgwACtDg==",
+                "text": "Reject",
                 "isValidOption": false,
-                "score": 0
+                "score": 0,
+                "_id": "cd650721-c37d-11ea-9f16-d5a0c000ad0e"
             }
         ],
         "__v": 0
@@ -728,14 +556,12 @@ RESPONSE JSON STRUCTURE
 }
 
 
+
+
 RESPONSE CODES:
 
 200 - OK
-400 - Bad request
+404 - Bad request
 500 - Server error
-
-
-
-
 
 
