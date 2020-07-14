@@ -1,0 +1,67 @@
+Questionschema
+
+{
+    flowchartid : id
+    questions : []
+}
+
+
+sample response
+
+{
+    flowchartid : '1234'
+
+    questions : [
+        {
+            _id : '455'
+            sno : 1
+            text : 'Take this order?'
+            type : 'MCQ'
+            options : [
+                {
+                    _id : '99'
+                    optiontext : 'accept'
+                    score : 10
+                    isValid : true
+                    nextquestionsno : 2
+                }
+            ]
+        },
+        {
+            _id : '6667'
+            sno : 2
+            text : 'What will you do after this ? '
+            type : 'input-type'
+            correctanswer : 'go home'
+            correctscore : 10
+            incorrectscore : 0
+            nextquestionsno : 3
+        },
+        {
+            _id : '6474'
+            sno : 3
+            text : 'What all would you take along'
+            type : 'multiple selection'
+            options : [
+                {
+                    _id : '563'
+                    optiontext : 'muffler'
+                },
+                {
+                    _id : '99'
+                    optiontext : 'food items'
+                },
+                {
+                    _id : '997'
+                    optiontext : 'bag'
+                }
+            ]
+            correctanswerids : [
+                '999' , '99' 
+            ]
+            correctscore : 10
+            incorrectscore : -2
+            nextquestionsno : 4
+        }
+    ]
+}
