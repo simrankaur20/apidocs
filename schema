@@ -1,0 +1,54 @@
+
+const optionSchema = new mongoose.Schema({
+  _id ,
+  text,
+  score,   
+  isValidOption,
+  nextquestionid
+});
+
+
+const questionSchema = new mongoose.Schema({
+  _id
+  isFirstQuestion
+  questiontext
+  optionstype : 'single-select' , 'multiple-select'
+  options : {
+      type : [optionSchema]
+  },
+  nextquestionid : required in case of multiple select else undefined
+});
+
+if the isvalid of all multiple select options will be true, answer would be considered as correct;
+score will be the sun of all options selected
+
+Eg :
+{
+    _id : '1234',
+    questiontext : 'Which all are fruits'
+    optionstype : 'multiple-select'
+    options : [
+        {
+            _id : '1415'
+            text : 'apple'
+            score : 10
+            isValidOption : true
+        },
+        {
+            _id : '3554'
+            text : 'brocolli'
+            score : -2
+            isValidOption : falsw
+        }
+    ]
+    nextquestionid : '464'
+}
+
+
+We will call the link api here to link question to nextquestionid
+submit button in frontend will help us go to the next question
+
+
+
+
+
