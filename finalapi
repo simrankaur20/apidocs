@@ -1,0 +1,406 @@
+
+
+{
+    "questions": [
+        {
+            "isFirstQuestion": true,
+            "questiontext": "Welcome to StrideQuest. Lets begin the game. Here come a new order for you. The details for the order are : pickup : pitampura , destination : noida , pay : 500  ",
+            "optionstype": "single-choice",
+            "options": [
+                {
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "questiontext": "The people at call-center suggested to follow rules. They asked you to deliver the order at the customer's doorstep. If the customer insists on not following the rules, you can return the order at store. You try convincing the customet once again but he is adamant. What do you do next?",
+            "optionstype": "single-choice",
+            "options": [
+                {
+                    "text": "Follow what the customer says.",
+                    "isValidOption": false,
+                    "score": -10
+                },
+                {
+                    "text": "Return the order to the store.",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ]
+        },
+        {
+            "questiontext": "You reached the customer's house with the order. As you know, Walmart has taken the initiative of no-contact deliveries. However, when you reached the customer's house and called him, he asked you to come upstairs. You told him about no-contact delivery. However, he insisted that you should come upstairs and deliver the order inside his home. ",
+            "optionstype": "single-choice",
+            "options": [
+                {
+                    "text": "Go upstairs",
+                    "isValidOption": false,
+                    "score": -10
+                },
+                {
+                    "text": "Insist him to come downstairs",
+                    "isValidOption": false,
+                    "score": -5
+                },
+                {
+                    "text": "Leave the order items at his doorstep",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "text": "Raise you concerns to the call-center",
+                    "isValidOption": true,
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "questiontext": "The customer takes the order and pays the amount of the order. What would you do next?",
+            "optionstype": "single-choice",
+            "options": [
+                {
+                    "text": "Sanitize the money and then keep it",
+                    "isValidOption": true,
+                    "score": 10
+                },
+                {
+                    "text": "I are tired. Keep it as. Won't make any difference.",
+                    "isValidOption": false,
+                    "score": -10
+                },
+                {
+                    "text": "Ask him for digital payment.",
+                    "isValidOption": true,
+                    "score": 10
+                }
+            ]
+        },
+        {
+            "questiontext": "Oops, you couldn't take the previous order. No worries, here is a new order, hope you will accept this order. Pickup : Rohini , Destination : Shalimar Bagh, Pay : 400",
+            "optionstype": "single-choice",
+            "options": [
+                {
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "questiontext": "With the spread of the pandemic, Walmart has instructed all its drivers to follow all proper measures for one's safety. What all would you carry to keep yourself safe? Please select all valid options. ",
+            "optionstype": "multiple-choice",
+            "options": [
+                {
+                    "text": "Sanitizer",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "text": "Face shield",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "text": "Mask",
+                    "isValidOption": true,
+                    "score": 5
+                },
+                {
+                    "text": "food-items",
+                    "isValidOption": true,
+                    "score": 0
+                }
+            ]
+        }
+    ]
+}
+
+/////////////////////////////////////
+RESPONSE
+
+
+////////////////////////////////
+
+{
+    "questions": [
+        {
+            "isFirstQuestion": true,
+            "questiontext": "Welcome to StrideQuest. Lets begin the game. Here come a new order for you. The details for the order are : pickup : pitampura , destination : noida , pay : 500  ",
+            "optionstype": "single-choice",
+            "journey_id": "2bdd4fe0-cc22-11ea-8785-63f9ebd98606",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "2bde6150-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0,
+                    "_id": "2bde8860-cc22-11ea-8785-63f9ebd98606"
+                }
+            ],
+            "_id": "2bde8861-cc22-11ea-8785-63f9ebd98606",
+            "__v": 0
+        },
+        {
+            "questiontext": "The people at call-center suggested to follow rules. They asked you to deliver the order at the customer's doorstep. If the customer insists on not following the rules, you can return the order at store. You try convincing the customet once again but he is adamant. What do you do next?",
+            "optionstype": "single-choice",
+            "journey_id": "2bdd4fe0-cc22-11ea-8785-63f9ebd98606",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Follow what the customer says.",
+                    "isValidOption": false,
+                    "score": -10,
+                    "_id": "2be16e90-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Return the order to the store.",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "2be195a0-cc22-11ea-8785-63f9ebd98606"
+                }
+            ],
+            "_id": "2be195a1-cc22-11ea-8785-63f9ebd98606",
+            "__v": 0
+        },
+        {
+            "questiontext": "You reached the customer's house with the order. As you know, Walmart has taken the initiative of no-contact deliveries. However, when you reached the customer's house and called him, he asked you to come upstairs. You told him about no-contact delivery. However, he insisted that you should come upstairs and deliver the order inside his home. ",
+            "optionstype": "single-choice",
+            "journey_id": "2bdd4fe0-cc22-11ea-8785-63f9ebd98606",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Go upstairs",
+                    "isValidOption": false,
+                    "score": -10,
+                    "_id": "2be1e3c0-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Insist him to come downstairs",
+                    "isValidOption": false,
+                    "score": -5,
+                    "_id": "2be1e3c1-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Leave the order items at his doorstep",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "2be1e3c2-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Raise you concerns to the call-center",
+                    "isValidOption": true,
+                    "score": 5,
+                    "_id": "2be20ad0-cc22-11ea-8785-63f9ebd98606"
+                }
+            ],
+            "_id": "2be20ad1-cc22-11ea-8785-63f9ebd98606",
+            "__v": 0
+        },
+        {
+            "questiontext": "The customer takes the order and pays the amount of the order. What would you do next?",
+            "optionstype": "single-choice",
+            "journey_id": "2bdd4fe0-cc22-11ea-8785-63f9ebd98606",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Sanitize the money and then keep it",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "2be231e0-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "I are tired. Keep it as. Won't make any difference.",
+                    "isValidOption": false,
+                    "score": -10,
+                    "_id": "2be231e1-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Ask him for digital payment.",
+                    "isValidOption": true,
+                    "score": 10,
+                    "_id": "2be231e2-cc22-11ea-8785-63f9ebd98606"
+                }
+            ],
+            "_id": "2be231e3-cc22-11ea-8785-63f9ebd98606",
+            "__v": 0
+        },
+        {
+            "questiontext": "Oops, you couldn't take the previous order. No worries, here is a new order, hope you will accept this order. Pickup : Rohini , Destination : Shalimar Bagh, Pay : 400",
+            "optionstype": "single-choice",
+            "journey_id": "2bdd4fe0-cc22-11ea-8785-63f9ebd98606",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Accept",
+                    "isValidOption": true,
+                    "score": 5,
+                    "_id": "2be28000-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Reject",
+                    "isValidOption": false,
+                    "score": 0,
+                    "_id": "2be28001-cc22-11ea-8785-63f9ebd98606"
+                }
+            ],
+            "_id": "2be28002-cc22-11ea-8785-63f9ebd98606",
+            "__v": 0
+        },
+        {
+            "questiontext": "With the spread of the pandemic, Walmart has instructed all its drivers to follow all proper measures for one's safety. What all would you carry to keep yourself safe? Please select all valid options. ",
+            "optionstype": "multiple-choice",
+            "journey_id": "2bdd4fe0-cc22-11ea-8785-63f9ebd98606",
+            "options": [
+                {
+                    "nextquestionid": null,
+                    "text": "Sanitizer",
+                    "isValidOption": true,
+                    "score": 5,
+                    "_id": "2be2a710-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Face shield",
+                    "isValidOption": true,
+                    "score": 5,
+                    "_id": "2be2a711-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "Mask",
+                    "isValidOption": true,
+                    "score": 5,
+                    "_id": "2be2a712-cc22-11ea-8785-63f9ebd98606"
+                },
+                {
+                    "nextquestionid": null,
+                    "text": "food-items",
+                    "isValidOption": true,
+                    "score": 0,
+                    "_id": "2be2a713-cc22-11ea-8785-63f9ebd98606"
+                }
+            ],
+            "_id": "2be2a714-cc22-11ea-8785-63f9ebd98606",
+            "__v": 0
+        }
+    ],
+    "errors": []
+}
+
+////////////////////////////
+
+links
+
+
+//////////////request
+
+
+{
+    "links" : [
+        {
+            "Optionid" : "2bde6150-cc22-11ea-8785-63f9ebd98606",  
+            "NextQuestionId" : "2be2a714-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2bde8860-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be28002-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be2a710-cc22-11ea-8785-63f9ebd98606", 
+            "NextQuestionId" : "2be20ad1-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be2a711-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be20ad1-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be2a712-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be20ad1-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be2a713-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be20ad1-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be1e3c0-cc22-11ea-8785-63f9ebd98606", 
+            "NextQuestionId" : "2be231e3-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be1e3c1-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be231e3-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be20ad0-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be231e3-cc22-11ea-8785-63f9ebd98606"
+        },
+        {
+            "Optionid" : "2be1e3c0-cc22-11ea-8785-63f9ebd98606",
+            "NextQuestionId" : "2be195a1-cc22-11ea-8785-63f9ebd98606"
+        }
+
+    ]
+}
+
+//RESPONSE
+
+////////////
+{
+    "message": "Links established"
+}
+
+
+
+///
+question
+{
+    "question": {
+        "_id": "c5d0bc42-d37f-11ea-b551-539165da2384",
+        "isFirstQuestion": true,
+        "questiontext": "Welcome to StrideQuest. Lets begin the game. Here come a new order for you. The details for the order are : pickup : pitampura , destination : noida , pay : 500  ",
+        "optionstype": "single-choice",
+        "journey_id": "c5d04710-d37f-11ea-b551-539165da2384",
+        "options": [
+            {
+                "nextquestionid": "2be231e3-cc22-11ea-8785-63f9ebd98606",
+                "text": "Accept",
+                "isValidOption": true,
+                "score": 10,
+                "_id": "c5d0bc40-d37f-11ea-b551-539165da2384"
+            },
+            {
+                "nextquestionid": "2be231e3-cc22-11ea-8785-63f9ebd98606",
+                "text": "Reject",
+                "isValidOption": false,
+                "score": 0,
+                "_id": "c5d0bc41-d37f-11ea-b551-539165da2384"
+            }
+        ],
+        "__v": 0
+    }
+}
